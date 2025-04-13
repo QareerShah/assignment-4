@@ -48,10 +48,10 @@ if page.startswith("🏠"):
     
     col1, col2 = st.columns(2)
     with col1:
-        st.image("home-page.svg", width=400)
+        st.image("home-page.svg")
     with col2:
         st.write("This is the **Home Page** of the app — built with Python and Streamlit!")
-        name = st.text_input("👤 Enter your name:", placeholder="e.g., Qareer Shah")
+        name = st.text_input("👤 Enter your name:", placeholder="e.g., Your Name")
         if name:
             st.success(f"👋 Hello, {name}!")
         else:
